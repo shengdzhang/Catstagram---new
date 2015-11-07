@@ -1,0 +1,100 @@
+/* Profile */
+.profile {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background: inherit;
+}
+
+.profile-picture {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 130px;
+  height: 115px;
+  float: left;
+  text-align: center;
+}
+
+.profile-wrapper-current {
+  border-radius: 5px;
+  float: right;
+  text-align: center;
+}
+
+.user-profile {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+  width: 49%;
+}
+
+.user-upload {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: right;
+  width: 49%;
+}
+
+.showpage-nomedia {
+  padding: 100px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 1%;
+  background-color: white;
+}
+
+.profile-wrapper-current > .show-follows {
+  clear: both;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.profile-wrapper-foreign {
+  border-radius: 5px;
+  float: right;
+  text-align: center;
+}
+
+.profile-wrapper-foreign > .show-follows {
+  padding-top: 50px;
+  margin-left: 30%;
+  text-align: left;
+}
+
+/* Media */
+.media-list {
+  width: 800px;
+  margin: auto;
+}
+
+.media-list > li {
+  width: 31%;
+  float: left;
+  height: 200px;
+  margin: 1%;
+  border: 1px solid white;
+  border-radius: 2px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.media-list > li:last-child {
+  margin-bottom: 100px;
+}
+
+.media-list > li:first-child {
+  margin-top: 1%;
+}
+
+.user-show-img {
+  height: 200px;
+}
+
+.user-show-img:hover {
+  cursor: pointer;
+}
+
+.media-overlay {
+  width: inherit;
+  height: inherit;
+}

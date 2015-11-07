@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catstagram</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<script>
+  window.cloudinary_upload_preset = "<%=ENV["cloudinary_upload_preset"]%>"
+  window.cloudinary_cloud_name = "<%=ENV["cloudinary_cloud_name"]%>"
+</script>
+<script src=https://widget.cloudinary.com/global/all.js>
+</script>
+
+
+<%= yield %>
+
+<%= render "layouts/errors" %>
+
+</body>
+</html>

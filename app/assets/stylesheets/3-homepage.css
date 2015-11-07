@@ -1,0 +1,35 @@
+
+.heading {
+  width: 200px;
+  margin:auto;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.suggest-wrapper {
+  padding-bottom: 80px;
+}
+
+.suggest > a{
+  margin-top: 1px;
+  margin-bottom: 1px;
+  color: #000;
+  padding-left: 20px;
+}
+
+.suggest > a {
+  color: cornflowerblue;
+}
+
+.suggest > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 40px;
+  height: 30px;
+  float: left;
+  padding: 0;
+}

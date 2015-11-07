@@ -1,0 +1,72 @@
+
+.comments-list > li {
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.comments-list >li:first-child {
+  margin-top: 20px;
+
+}
+
+.media-button-container {
+  float: right;
+  width: 43px;
+  height: 43px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.media-button-container > button {
+  width: 100%;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.media-button-container > button:hover {
+  background-color: green;
+}
+
+.comment-form {
+  width: 85%;
+  margin-left: 10px;
+  height: 40px;
+  float: left;
+}
+
+.Medium-input{
+  border: 1px solid black;
+  width: 100%;
+  height: 38px;
+  padding: 2px;
+  margin-top: 15px;
+}
+
+.Comment-input{
+  border: 1px solid black;
+  width: 100%;
+  height: 24px;
+  padding: 2px;
+  margin: 0;
+  font-size: 12px;
+  margin-left: -10px;
+}
+
+.media-submit-container{
+  width: 43px;
+  height: 43px;
+  margin-left: 6px;
+  float: left;
+  margin-left: 18px;
+  margin-top: 15px;
+}
+
+.media-submit-container > button {
+  width: 100%;
+  height: 40px;
+  border-radius: 50%;
+}

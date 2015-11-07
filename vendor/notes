@@ -1,0 +1,33 @@
+finish show page
+
+reset Nav bar
+
+save current User on nav bar
+
+clicking on current user name navs to current user show
+
+have button on Nav bar to log out
+
+get show page to differentiate between user and current user
+
+can upload pictures
+
+have a picture show skeleton ready
+<h1>
+  <div className="headwrap">
+    Catstagram
+
+  </div>
+</h1>
+
+<% if logged_in? %>
+<header>
+  <div class="head">
+  <%= current_user.username %>
+  <script type="text/javascript">
+    CURRENT_USER_ID = <%= current_user.id %>
+  </script>
+  <%= button_to "Log Out", session_url, method: :delete%>
+  <div class="head">
+</header>
+<% end %>

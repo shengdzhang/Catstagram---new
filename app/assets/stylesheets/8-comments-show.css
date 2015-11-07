@@ -1,0 +1,39 @@
+.comments-list {
+  height: 215px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  border-radius: 2px;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+.comment-wrap {
+  margin-top: 5px;
+  height: 75px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+.nested-comments {
+  margin-left: 30px;
+  border: none;
+}
+
+.nested-comments > .comment-form {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.comment-author {
+  margin-left: 5px;
+}
+
+.comment-body {
+  margin-left: 5px;
+}
+
+.comment-edit-form {
+  margin-left: 40px;
+}

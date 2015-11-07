@@ -1,0 +1,55 @@
+.media-show {
+  padding-top: 70px;
+}
+
+.media-show > img {
+  height: 350px;
+  width: 350px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin-right: 5px;
+}
+
+.media-comments {
+  float: right;
+}
+
+.media-show-follow > .Follow {
+  width: 100px;
+  height: 24px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.media-show-author {
+  margin-left: 30px;
+}
+
+.media-show-follow > .Unfollow {
+  width: 100px;
+  height: 24px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.comment-wrap > .comment-form > input {
+  margin-left: 10px;
+
+}
+
+.media-show-likes {
+  margin-left: 30px;
+}
+
+.media-info {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.media-show-desc {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}

@@ -29,6 +29,18 @@ nav {
   margin-top: 10px;
 }
 
+#guestbtn {
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+#guestbtn:hover {
+  outline: none;
+  background-color: #EBEAEA;
+}
+
 .navbar > li {
   width: 25%;
   float: left;

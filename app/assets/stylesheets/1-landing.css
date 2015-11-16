@@ -82,7 +82,7 @@ section.module.parallax-3 h1 {
 }
 
 #signup-message a{
-  color: #75FA42;
+  color: #315E25;
 }
 
 #signin-message a{
@@ -101,7 +101,7 @@ input.signing {
   font-size: 14px;
 }
 
-#guest-button {
+.guest-button {
   width: 37px;
   padding-left: 0;
   padding-right: 0;
@@ -109,11 +109,11 @@ input.signing {
   outline: none;
   background-color: inherit;
   background: inherit;
-  color: #5CFFF4;
+  color: #1038A7;
   text-align: center;
 }
 
-#guest-button:hover {
+.guest-button:hover {
   text-decoration: underline;
   color: cornflowerblue;
 }
@@ -129,8 +129,8 @@ input.signing {
 
 .auth-wrap > .form-wrap {
   margin-bottom: 50px;
-  margin-top: 70px;
-  background: rgba(255, 255, 255, 0.5);
+  margin-top: 170px;
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid gray;
   border-radius: 5%;
   padding: 20px;

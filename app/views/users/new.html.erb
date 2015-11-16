@@ -16,6 +16,12 @@
       <ul class="nav navbar-nav pull-right">
         <li><a id="signinbtn" class="button btn btn-primary" href="<%= new_session_url%>">Sign In</a></li>
         <li><a id="signupbtn" class="button btn btn-primary" href="#signup">Sign Up</a></li>
+        <li>
+          <form action="<%= guest_session_url %>" method="post">
+            <%= auth_token %>
+            <input id="guestbtn" class="button btn btn-primary" type="submit" value="Guest"/>
+          </form>
+        </li>
       </ul>
     </div>
 
@@ -30,7 +36,8 @@
 
 <section class="module content">
   <div class="container">
-    <p> Welcome. This is a demo project inspired by Instagram. </p>
+    <h2> Welcome. This is a project inspired by Instagram. </h2>
+    <p> Created using Ruby on Rails and jReact.</p>
   </div>
 </section>
 
@@ -43,21 +50,21 @@
 <section class="module content">
   <a name="signup"> </a>
     <div class="container col-xs-offset-4">
-    <h1 class="col-xs-offset-1">  Sign Up! </h1>
+    <h1 class="col-xs-offset-2">  Sign Up! </h1>
 
     <br/>
 
     <form action="<%= users_url %>" method="post">
       <%= auth_token %>
       <div class="form-group row">
-        <div class="col-xs-offset-1">
+        <div class="col-xs-offset-1 col-xs-4">
           <label class="signing"> Username </label>
           <input class="signing" type="text" name="user[username]" value=""/>
         </div>
       </div>
 
       <div class="form-group row">
-        <div class="col-xs-offset-1">
+        <div class="col-xs-offset-1 col-xs-4">
           <label class="signing"> Password </label>
           <input class="signing" type="password" name="user[password]" value=""/>
         </div>
@@ -71,7 +78,16 @@
     </form>
 
     <div id="signin-message" class="col-xs-offset-1">
-    Already have an account? <a href= "<%= new_session_url%>" > Sign In </a>
+      Already have an account? <a href= "<%= new_session_url%>" > Sign In </a>
+    </div>
+
+    <div class="col-xs-offset-1 guest-message">
+      <form action="<%= guest_session_url %>" method="post">
+        <%= auth_token %>
+        Or use a
+        <input class="guest-button" type="submit" value="Guest"/>
+        account.
+      </form>
     </div>
 
   </div>

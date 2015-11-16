@@ -12,15 +12,8 @@
   window.cloudinary_upload_preset = "<%=ENV["cloudinary_upload_preset"]%>"
   window.cloudinary_cloud_name = "<%=ENV["cloudinary_cloud_name"]%>"
 </script>
-<script>
-  var http = require("http");
-  setInterval(function() {
-      http.get("http://blooming-basin-5328.herokuapp.com");
-  }, 300000); // pings websiteevery 5 minutes (300000)
-</script>
 <script src=https://widget.cloudinary.com/global/all.js>
 </script>
-
 
 <%= yield %>
 

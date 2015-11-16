@@ -1,24 +1,32 @@
 nav {
-  background: rgb(181,189,200); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 40%, rgba(130,140,149,1) 40%, rgba(181,189,200,1) 79%, rgba(40,52,59,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(181,189,200,1)), color-stop(40%,rgba(130,140,149,1)), color-stop(40%,rgba(130,140,149,1)), color-stop(79%,rgba(181,189,200,1)), color-stop(100%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 40%,rgba(130,140,149,1) 40%,rgba(181,189,200,1) 79%,rgba(40,52,59,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 40%,rgba(130,140,149,1) 40%,rgba(181,189,200,1) 79%,rgba(40,52,59,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 40%,rgba(130,140,149,1) 40%,rgba(181,189,200,1) 79%,rgba(40,52,59,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 40%,rgba(130,140,149,1) 40%,rgba(181,189,200,1) 79%,rgba(40,52,59,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+  background: rgb(228,245,252); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(228,245,252,1) 0%, rgba(253,255,249,1) 94%, rgba(42,176,237,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(228,245,252,1) 0%,rgba(253,255,249,1) 94%,rgba(42,176,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(228,245,252,1) 0%,rgba(253,255,249,1) 94%,rgba(42,176,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
   width: 100%;
-  height: 80px;
+  height: 60px;
   position: relative;
   text-align: center;
-  color: black;
-  border-bottom: 1px solid #21D2D2
+  border-bottom: 1px solid black
 }
 
-.navbar {
-  list-style: none;
-  width: 90%;
-  margin: auto;
+.mynavbar {
+  position: relative;
+  min-height: 50px;
+}
+
+#signupbtn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#signinbtn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .navbar > li {
@@ -55,6 +63,7 @@ nav {
   float: right;
   transition: 1s;
   font-family: 'Lobster', cursive;
+  margin-right: 40px;
 }
 
 .user-name {

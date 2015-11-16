@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 button {
@@ -31,18 +31,12 @@ button {
   outline: none;
 }
 
-.welcome {
-  color: white;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 20px;
-}
-
 #content {
   overflow-y: hidden;
 }
 
 .pagewrapper {
+  width: 100vw;
   height: calc(100vh - 80px);
   background-color: #E8E8E8;
   overflow-y: scroll;

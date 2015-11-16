@@ -1,0 +1,89 @@
+<div class="auth-wrap">
+  <h1 class="welcome"> Welcome to Catstagram </h1>
+    <div class="form-wrap container col-xs-offset-2">
+      <h1 class="col-xs-offset-1"> Sign In! </h1>
+
+      <br/>
+
+      <section id="sign-in-section" class="module parallax parallax-0">
+        <div class="container">
+          <div class="sign-in-container">
+            <form class="form-signin" action="<%= session_url %>" method="post">
+              <input
+                type="hidden"
+                name="authenticity_token"
+                value="<%= form_authenticity_token %>">
+
+              <label for="user_username" class="sr-only">Username</label>
+              <input type="username" name="user[username]" id="user_username" class="form-control" placeholder="username" required="" autofocus="">
+
+              <label for="user_password" class="sr-only">Password</label>
+              <input type="password" name="user[password]" id="user_password" class="form-control" placeholder="password" required="">
+
+              <button id="sign-in-button" class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+              <br>
+              Need an account? <a href="/users/new">Sign Up</a>
+              <br>
+              Or <a onclick="guestSignIn()">use a guest account.</a>
+            </form>
+          </div>  </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2 id="welcome-header" >Welcome to CleverNote</h2>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-1">
+        <div class="container">
+          <h1>Write</h1>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2">
+        <div class="container">
+          <h1>Organize</h1>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-3">
+        <div class="container">
+          <h1>Simplify</h1>
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <p>Clean, uncluttered design lets you focus on your work, not your tools.</p>
+        </div>
+      </section>
+
+      <div id="signup-message" class="col-xs-offset-1">
+      Need a new account? <a href= "<%= new_user_url%>" > Sign Up </a>
+      </div>
+      <div id="guest-message" class="col-xs-offset-1">
+
+      <form action="<%= guest_session_url %>" method="post">
+        <%= auth_token %>
+        Or use a
+        <input id="guest-button" type="submit" value="Guest"/>
+        account.
+      </form>
+    </div>
+  </div>
+</div>

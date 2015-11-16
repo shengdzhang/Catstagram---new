@@ -1,38 +1,83 @@
-<div class="auth-wrap">
-  <h1 class="welcome"> Welcome to Catstagram </h1>
-    <div class="form-wrap container col-xs-offset-2">
-      <h1 class="col-xs-offset-1"> Sign Up! </h1>
+<nav class="mynavbar">
+  <div class="container-fluid">
 
-      <br/>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapse-menu"
+              aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-      <form action="<%= users_url %>" method="post">
-        <%= auth_token %>
-        <div class="form-group row">
-          <div class="col-xs-offset-1">
-            <label class="signing"> Username </label>
-            <input class="signing" type="text" name="user[username]" value=""/>
-          </div>
+    <div class="collapse navbar-collapse" id="collapse-menu">
+      <ul class="nav navbar-nav pull-right">
+        <li><a id="signinbtn" class="button btn btn-primary" href="<%= new_session_url%>">Sign In</a></li>
+        <li><a id="signupbtn" class="button btn btn-primary" href="#signup">Sign Up</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<section class="module parallax parallax-1">
+  <div class="container">
+    <h1> Catstagram </h1>
+  </div>
+</section>
+
+<section class="module content">
+  <div class="container">
+    <p> Welcome. This is a demo project inspired by Instagram. </p>
+  </div>
+</section>
+
+<section class="module parallax parallax-2">
+  <div class="container">
+    <h1> Sign up and enjoy! </h1>
+  </div>
+</section>
+
+<section class="module content">
+  <a name="signup"> </a>
+    <div class="container col-xs-offset-4">
+    <h1 class="col-xs-offset-1">  Sign Up! </h1>
+
+    <br/>
+
+    <form action="<%= users_url %>" method="post">
+      <%= auth_token %>
+      <div class="form-group row">
+        <div class="col-xs-offset-1">
+          <label class="signing"> Username </label>
+          <input class="signing" type="text" name="user[username]" value=""/>
         </div>
-
-        <div class="form-group row">
-          <div class="col-xs-offset-1">
-            <label class="signing"> Password </label>
-            <input class="signing" type="password" name="user[password]" value=""/>
-          </div>
-        </div>
-
-        <div class="form-group row">
-          <div class="col-xs-offset-1">
-            <input class="button btn btn-primary" type="submit" value="Sign Up"/>
-          </div>
-        </div>
-      </form>
-
-      <div id="signin-message" class="col-xs-offset-1">
-      Already have an account? <a href= "<%= new_session_url%>" > Sign In </a>
       </div>
 
-      <br/>
-      <br/>
+      <div class="form-group row">
+        <div class="col-xs-offset-1">
+          <label class="signing"> Password </label>
+          <input class="signing" type="password" name="user[password]" value=""/>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-xs-offset-2">
+          <input class="button btn btn-primary" type="submit" value="Sign Up"/>
+        </div>
+      </div>
+    </form>
+
+    <div id="signin-message" class="col-xs-offset-1">
+    Already have an account? <a href= "<%= new_session_url%>" > Sign In </a>
+    </div>
+
   </div>
-</div>
+</section>
+
+<section class="module parallax parallax-3">
+  <div class="container">
+  </div>
+</section>

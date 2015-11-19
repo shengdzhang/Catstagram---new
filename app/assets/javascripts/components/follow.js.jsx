@@ -4,10 +4,12 @@ var FollowButton = React.createClass ({
     e.preventDefault();
     ApiUtil.createFollow(this.props.idx);
   },
+
   handleClickUnfollow: function (e) {
     e.preventDefault();
     ApiUtil.removeFollow(this.props.idx);
   },
+
   render: function () {
     var name = "Follow";
     var click = this.handleClickFollow;
@@ -26,4 +28,5 @@ var FollowButton = React.createClass ({
     );
 
   }
+
 });

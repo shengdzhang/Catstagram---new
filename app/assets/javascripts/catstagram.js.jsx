@@ -10,9 +10,9 @@ var App = React.createClass({
     return (
         <div>
           <Nav/>
-          <div className="pagewrapper">
-            {this.props.children}
-          </div>
+            <div className="pagewrapper">
+              {this.props.children}
+            </div>
         </div>
     );
   }
@@ -20,14 +20,14 @@ var App = React.createClass({
 
 var routes = (
   <Route path="/" component={App}>
-    <IndexRoute component={UserHomepage}/>
-      <Route path="users/:userId" component={UserShowpage}></Route>
-      <Route path="media/new" component={MediaForm}/>
-      <Route path="media/:mediumId" component={MediaShowpage}/>
-      <Route path="media/:mediumId/edit" component={MediaEdit}/>
-      <Route path="users/:userId/edit" component={UserEditpage}/>
+    <IndexRoute component={Single}/>
+    <Route path="users/:userId" component={UserShowpage}>
+      <Route path="media/:mediumId" component={MediaPage}/>
+    </Route>
+
   </Route>
 );
+
 
 $(function() {
 

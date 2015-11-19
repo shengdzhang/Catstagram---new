@@ -1,7 +1,6 @@
 
 
 var UserProfile = React.createClass ({
-  mixins: [ReactRouter.History],
   handleMedia: function () {
     this.history.pushState(null, "media/new");
   },

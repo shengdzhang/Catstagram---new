@@ -21,3 +21,22 @@ seed heroku database------
 nest routes for media show and have overlay
 
 repeat for user edit and media edit
+
+
+-----------
+
+<Route path="media/new" component={MediaForm}/>
+<Route path="media/:mediumId" component={MediaShowpage}/>
+<Route path="media/:mediumId/edit" component={MediaEdit}/>
+<Route path="users/:userId/edit" component={UserEditpage}/>
+componentWillReceiveProps: function(val) {
+  var id = val.params.userId;
+  ApiUtil.getSingleUser(id);
+  ApiUtil.getMedia(id);
+  this.setState({userId: id});
+},
+
+    UsersStore.addChangeListener(this.onChange);
+    onChange: function (e) {
+      this.setState({users: UsersStore.all().splice(0,10)}); //top 10
+    },

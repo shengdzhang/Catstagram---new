@@ -1,4 +1,5 @@
 <% if logged_in? %>
+
   <script type="text/javascript">
     CURRENT_USER_ID = <%= current_user.id %>;
     GUEST = false;
@@ -7,6 +8,9 @@
     <% end %>
   </script>
 <% end %>
+
 <%= javascript_include_tag 'application' %>
+
 <div id="content">
+
 </div>

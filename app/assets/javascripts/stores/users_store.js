@@ -25,21 +25,26 @@
   };
 
   var UsersStore = root.UsersStore = $.extend({}, EventEmitter.prototype, {
+
     all: function () {
       return _users.slice();
     },
+
     getUser: function (id) {
-      if (id === 16)
+      if (GUEST)
       {
-        return {id: 16, username: "Guest"};
+        return {id: CURRENT_USER_ID, username: "Guest"};
       }
+
       var idx = this.findUser(id);
+
       if(idx) {
         return _users[idx];
       } else if(id === _currentUser.id){
         return this.getCurrentUser();
       }
     },
+
     findUser: function (id) {
       for(var i=0; i < _users.length; i++){
         if(_users[i].id === id) {
@@ -47,24 +52,31 @@
         }
       }
     },
+
     getCurrentUser: function () {
       return $.extend({}, _currentUser);
     },
+
     getShowUser: function () {
       return $.extend({},_user);
     },
+
     addChangeListener: function(callback){
       this.on(CHANGE_EVENT, callback);
     },
+
     removeChangeListener: function(callback){
       this.removeListener(CHANGE_EVENT, callback);
     },
+
     addUpdateListener: function(callback){
       this.on(UPDATE_EVENT, callback);
     },
+
     removeUpdateListener: function(callback){
       this.removeListener(UPDATE_EVENT, callback);
     },
+
     dispatcherID: AppDispatcher.register(function(payload){
       switch(payload.actionType){
         case UsersConstants.FETCH_USERS:
@@ -79,4 +91,5 @@
       }
     })
   });
+
 }(this));

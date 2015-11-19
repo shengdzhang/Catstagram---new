@@ -1,25 +1,33 @@
 var Search = React.createClass ({
+
   mixins: [ReactRouter.History],
+
   getInitialState: function () {
     return {searchQuery: "", users: UsersStore.all()};
   },
+
   handleChange: function (e) {
     this.setState ({searchQuery: e.target.value});
   },
+
   componentDidMount: function () {
     UsersStore.addChangeListener(this.onUserChange);
   },
+
   componentWillUnmount: function () {
     UsersStore.removeChangeListener(this.onUserChange);
   },
+
   onUserChange: function () {
     this.setState({users: UsersStore.all()});
   },
+
   handleClick: function (id, e) {
     this.setState({searchQuery: ""});
-    var url = "users/" + (id);
+    var url = "users/" + id;
     this.history.pushState(null, url);
   },
+
   render: function () {
     var placeholder = "\ud83d\udd0d";
     var names = [];
@@ -46,4 +54,5 @@ var Search = React.createClass ({
       </div>
     );
   }
+
 });
